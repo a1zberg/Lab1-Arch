@@ -1,5 +1,5 @@
 https://travis-ci.com/a1zberg
-Получилось два фейла, т.к. при выполнении выдает ошибку на команде "git describe".
-Ошибка:
+We got only faild with Travis, cause it fails on "git describe"
+Error:
 "git describe >> version.txt
 fatal: No names found, cannot describe anything."
