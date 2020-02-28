@@ -4,7 +4,7 @@ clean:
 test:
 	go vet ./implementation
 	go test ./implementation
-mainbuild:	implementation/implementation.go main.go
+mainbuild:
 	mkdir out
 	git describe >> version.txt
 	go build -o out/example
