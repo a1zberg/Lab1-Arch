@@ -2,6 +2,7 @@ default:test
 clean:
 	rmdir /s /q out
 test:
+	go get "github.com/golang-collections/collections/stack"
 	go vet ./implementation
 	go test ./implementation
 mainbuild:
