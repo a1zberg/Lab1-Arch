@@ -3,8 +3,9 @@ package implementation
 import (
 	"fmt"
 	"strings"
-
-	"../stack"
+)
+import (
+	"github.com/golang-collections/collections/stack"
 )
 
 func isOperator(x string) bool {
