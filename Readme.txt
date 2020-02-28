@@ -3,3 +3,4 @@ We got only faild with Travis, cause it fails on "git describe"
 Error:
 "git describe >> version.txt
 fatal: No names found, cannot describe anything."
+Nwm, 1 branch with test SUCCESS.
