@@ -1,4 +1,4 @@
-default:test
+default:mainbuild
 clean:
 	rmdir /s /q out
 test:
