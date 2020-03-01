@@ -1,4 +1,4 @@
-default:test
+default:mainbuild
 clean:
 	rmdir /s /q out
 test:
@@ -6,7 +6,6 @@ test:
 	go test ./implementation
 mainbuild:
 	mkdir out
-	git describe >> version.txt
-	go build -o out/example
+	toGetVer.bat
+	go build -o out/example BuildVersion.go main.go
 	out/example
-	del version.txt

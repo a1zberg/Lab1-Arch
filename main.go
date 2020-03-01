@@ -1,7 +1,7 @@
 package main
 
 import (
-	"bufio"
+	//"bufio"
 	"fmt"
 	"os"
 
@@ -15,12 +15,13 @@ func main() {
 	result := implementation.PrefToPost(expression)
 	fmt.Println("Это же число в постфиксной форме:")
 	fmt.Println(result)
-	if input, err := os.Open("version.txt"); err == nil {
-		defer input.Close()
-		scanner := bufio.NewScanner(input)
-		for scanner.Scan() {
-			buildVersion := scanner.Text()
-			fmt.Println("Version is: " + buildVersion)
-		}
-	}
+	fmt.Println("Version is: " + BuildVersion)
+	//if input, err := os.Open("version.txt"); err == nil {
+	//	defer input.Close()
+	//	scanner := bufio.NewScanner(input)
+	//	for scanner.Scan() {
+	//		buildVersion := scanner.Text()
+	//		fmt.Println("Version is: " + buildVersion)
+	//	}
+	//}
 }
